@@ -180,7 +180,7 @@ export default function Contact() {
               </div>
               <div className="space-y-4">
                 <h2 className="text-2xl font-semibold mb-4 text-text-primary">
-                  Suter International
+                  Roza Park International
                 </h2>
                 <div className="flex items-center p-2 rounded-lg hover:bg-primary hover:text-secondary transition duration-300">
                   <MapPin className="mr-2" />

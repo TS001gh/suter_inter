@@ -29,15 +29,6 @@ export default function Home() {
             </Link>
           </div>
         </section>
-      /*  <section className="bg-gradient-to-tl from-primary/75 to-secondary rounded-3xl shadow-lg mt-20 transition duration-300 animate-fade-in-right">
-          <Image
-            src={mainImage}
-            alt="main image"
-            width={1000}
-            height={1000}
-            className="w-full rounded-3xl"
-          />
-        </section>*/
         {/* Brands List */}
         <BrandsList />
         {/* Who We Are Section */}

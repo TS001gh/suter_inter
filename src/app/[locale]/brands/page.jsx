@@ -4,7 +4,7 @@ import { useLocale, useTranslations } from "next-intl";
 import ScrolledBrand from "../../components/ScrolledBrand";
 import { usePathname } from "next/navigation";
 import { brandsList } from "../../../data/index.js";
-import suter from "../../../../public/images/brands/mr_suter.png";
+import suter from "../../../public/images/brands/mr_suter.png";
 import Image from "next/image";
 import Link from "next/link";
 

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import BrandsList from "../components/BrandsList";
-import mainImage from "../../../public/images/main-image-roza-park.jpg";
+import mainImage from "../../public/images/main-image-roza-park.jpg";
 import Image from "next/image";
 
 export default function Home() {
@@ -28,15 +28,6 @@ export default function Home() {
               {t("hero.cta")}
             </Link>
           </div>
-        </section>
-        <section className="bg-gradient-to-tl from-primary/75 to-secondary rounded-3xl shadow-lg mt-20 transition duration-300 animate-fade-in-right">
-          <Image
-            src={mainImage}
-            alt="main image"
-            width={1000}
-            height={1000}
-            className="w-full rounded-3xl"
-          />
         </section>
         {/* Brands List */}
         <BrandsList />

@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
-import suter_inter_logo from "../../../public/images/suter_inter.png";
-import suter_logo from "../../../public/images/brands/mr_suter.png";
+import suter_inter_logo from "../../public/images/suter_inter.png";
+import suter_logo from "../../public/images/brands/mr_suter.png";
 import { useLocale, useTranslations } from "next-intl";
 import LangSelector from "./LangSelector";
 

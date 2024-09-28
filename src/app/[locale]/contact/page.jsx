@@ -6,50 +6,6 @@ import { useTranslations } from "next-intl";
 
 export default function Contact() {
   const t = useTranslations("Contact");
-  // const [loading, setLoading] = useState(false);
-
-  // const [formData, setFormData] = useState({
-  //   name: "",
-  //   email: "",
-  //   subject: "",
-  //   message: "",
-  // });
-
-  // const handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   setFormData((prevState) => ({ ...prevState, [name]: value }));
-  // };
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setLoading(true);
-  //   // Handle form submission here (e.g., send data to an API)
-  //   console.log("Form submitted:", formData);
-  //   const { name, email, subject, message } = formData;
-  //   await fetch("/api/send", {
-  //     method: "POST",
-  //     body: JSON.stringify({ name, email, subject, message }),
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setLoading(false);
-  //       if (data && data.id) {
-  //         alert(
-  //           `Thank you for your interest ${name}! We will get back to you soon!`
-  //         );
-  //         setFormData({ name: "", email: "", subject: "", message: "" });
-  //       } else {
-  //         alert("Apologies! Please try again.");
-  //       }
-  //     })
-  //     .catch((err) => {
-  //       setLoading(false);
-  //       alert("Ooops! unfortunately some error has occurred.");
-  //     });
-  //   // Reset form after submission
-  //   setFormData({ name: "", email: "", subject: "", message: "" });
-  //   setLoading(false);
-  // };
 
   return (
     <div className="container mx-auto px-4 py-8 max-w-7xl mt-28">
@@ -58,76 +14,6 @@ export default function Contact() {
       </h1>
 
       <div className="grid grid-cols-1 justify-center max-w-6xl mx-auto gap-8">
-        {/* <div className="animate-fade-in-left">
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label htmlFor="name" className="block mb-1 text-text-primary">
-                {t("name")}
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="w-full p-2 border rounded-lg shadow-sm focus:ring-2 focus:ring-primary focus:border-primary transition duration-300"
-              />
-            </div>
-            <div>
-              <label htmlFor="email" className="block mb-1 text-text-primary">
-                {t("email")}
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full p-2 border rounded-lg shadow-sm focus:ring-2 focus:ring-primary focus:border-primary transition duration-300"
-              />
-            </div>
-            <div>
-              <label htmlFor="subject" className="block mb-1 text-text-primary">
-                {t("subject")}
-              </label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                required
-                className="w-full p-2 border rounded-lg shadow-sm focus:ring-2 focus:ring-primary focus:border-primary transition duration-300"
-              />
-            </div>
-            <div>
-              <label htmlFor="message" className="block mb-1 text-text-primary">
-                {t("message")}
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                rows={4}
-                className="w-full p-2 border rounded-lg shadow-sm focus:ring-2 focus:ring-primary focus:border-primary transition duration-300"
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className={`bg-primary text-secondary py-2 px-4 rounded-full hover:bg-primary-dark transition duration-300 hover:shadow-lg ${
-                loading ? "opacity-50 cursor-not-allowed animate-pulse" : ""
-              }`}
-              disabled={loading}
-            >
-              {t("sendMessage")}
-            </button>
-          </form>
-        </div> */}
-
         <div className="animate-fade-in-right">
           <div className="mb-8 flex flex-col space-y-4">
             <h2 className="text-2xl font-semibold mb-4 text-text-primary ">
@@ -180,7 +66,7 @@ export default function Contact() {
               </div>
               <div className="space-y-4">
                 <h2 className="text-2xl font-semibold mb-4 text-text-primary">
-                  Suter International
+                  Roza Park International
                 </h2>
                 <div className="flex items-center p-2 rounded-lg hover:bg-primary hover:text-secondary transition duration-300">
                   <MapPin className="mr-2" />

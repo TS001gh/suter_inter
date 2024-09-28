@@ -31,6 +31,11 @@ Follow these steps to clone and set up the project:
    npm install
    ```
 
+4. **For deployment**
+   ```bash
+   npm run build
+   ```
+
 ### Running the Project
 
 To run the project locally, use:
